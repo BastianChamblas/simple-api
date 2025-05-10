@@ -6,7 +6,8 @@ on:
       - main
 
 env:
-  IMAGE_NAME: ghcr.io/karivillagran/simple-api
+  IMAGE_NAME: ghcr.io/BastianChamblas/simple-api
+
 
 jobs:
   deploy:
