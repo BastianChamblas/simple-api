@@ -73,6 +73,7 @@ jobs:
         continue-on-error: true
 
   gitleaks-scan:
+    needs: [flake8-linter, bandit-security, pip-audit, tests-and-coverage]
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout repository
